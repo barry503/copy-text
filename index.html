@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, 
+	initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>Copiar codigo o texto con un click</title>
+    <!--Estilos de bootstrap-->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!--Estilos de iconos-->
+    <link rel="stylesheet" href="css/style-icons.css">
+</head>
+<body>
+    <div class="container">
+        <div class="row py-2">
+            <div class="col-md-12 py-5 text-center jumbotron">
+                <h1><i class="icon-copy"></i></h1>
+                <h1>Ejemplos para copiar texto o codigo</h1>
+            </div>
+            <div class="col-md-12">
+                    <p  style="display:none;" class=" btn text-white bg-dark" id="alerta">Texto copiado al portapapeles <i class="icon-copy"></i></p>
+            </div>            
+            <div class="col-md-6">
+                Ejemplo de Estructura basica html <br>
+                <code id="ejemplo1">
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>titulo</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no, 
+    initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+</head>
+<body>
+Ejemplo de estructura basica html
+</body>
+</html>
+</code><br>
+                <button onclick="copiar('ejemplo1')" class="btn btn-outline-secondary"><i class="icon-copy"></i> Copiar</button>
+            </div>
+            <div class="col-md-6">
+                Ejemplo de un enlace <br>
+              <code>
+                   <p id="ejemplo2"><a href="index.html">Soy un enlace.</a></p>
+                   </code>
+                <button onclick="copiar('ejemplo2')" class="btn btn-outline-secondary"><i class="icon-copy"></i> Copiar</button>
+            </div>
+            <div class="col-md-12 py-5">
+                <textarea name="text" id="text" style="width="800px" height="400px"" class="form-control" placeholder="AQUI PUEDES PEGAR EL TEXTO COPIADO"></textarea>
+            </div>
+            
+        </div>
+    </div>
+
+        <div class="footer bg-dark text-white py-5 mb-4">
+            <div class="container">
+                <div class="row text-center">
+                    <div class="col-md-12">
+                        Todos los derechos reservados |
+                        <a href="https://github/barry503"> barry503</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    <!--Script-->
+    <script src="js/funCopiar.js"></script>
+</body>
+</html>
